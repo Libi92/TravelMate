@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TravelMate</string>
+    <string name="regular_trips">Regular Trips</string>
+    <string name="plan_trips">Plan Trips</string>
+    <string name="contacts">Contacts</string>
+    <string name="search">Search</string>
+    <string name="near">Near</string>
+    <string name="travel_history">Travel History</string>
+</resources>

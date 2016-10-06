@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    tools:context="com.geojit.libin.travelmate.MainActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/main_header" />
+
+    <com.geojit.libin.travelmate.components.TMTextView
+        android:id="@+id/textView"
+        style="@style/MainActionTitle"
+        android:layout_below="@+id/header"
+        android:text="Activities" />
+
+    <GridLayout
+        android:id="@+id/main_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_margin="5dp"
+        android:background="@drawable/main_grid_background"
+        android:columnCount="3">
+
+        <com.geojit.libin.travelmate.components.RippleView
+            style="@style/MainGridItemRipple"
+            app:rv_color="@color/mainGridRipple">
+
+            <LinearLayout style="@style/MainGridItem">
+
+                <ImageView
+                    style="@style/MainGridImage"
+                    android:src="@mipmap/regular_trip" />
+
+                <com.geojit.libin.travelmate.components.TMTextView
+                    style="@style/MainGridTitle"
+                    android:text="@string/regular_trips" />
+            </LinearLayout>
+        </com.geojit.libin.travelmate.components.RippleView>
+
+
+        <com.geojit.libin.travelmate.components.RippleView
+            style="@style/MainGridItemRipple"
+            app:rv_color="@color/mainGridRipple">
+
+            <LinearLayout style="@style/MainGridItem">
+
+                <ImageView
+                    style="@style/MainGridImage"
+                    android:src="@mipmap/plan_trip" />
+
+                <com.geojit.libin.travelmate.components.TMTextView
+                    style="@style/MainGridTitle"
+                    android:text="@string/plan_trips" />
+            </LinearLayout>
+        </com.geojit.libin.travelmate.components.RippleView>
+
+        <com.geojit.libin.travelmate.components.RippleView
+            style="@style/MainGridItemRipple"
+            app:rv_color="@color/mainGridRipple">
+
+            <LinearLayout style="@style/MainGridItem">
+
+                <ImageView
+                    style="@style/MainGridImage"
+                    android:src="@mipmap/conatct" />
+
+                <com.geojit.libin.travelmate.components.TMTextView
+                    style="@style/MainGridTitle"
+                    android:text="@string/contacts" />
+            </LinearLayout>
+        </com.geojit.libin.travelmate.components.RippleView>
+
+        <!--////////////////////////////-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_columnSpan="3"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/main_grid_horizontal_divider" />
+
+        <com.geojit.libin.travelmate.components.RippleView
+            style="@style/MainGridItemRipple"
+            app:rv_color="@color/mainGridRipple">
+
+            <LinearLayout style="@style/MainGridItem">
+
+                <ImageView
+                    style="@style/MainGridImage"
+                    android:src="@mipmap/search" />
+
+                <com.geojit.libin.travelmate.components.TMTextView
+                    style="@style/MainGridTitle"
+                    android:text="@string/search" />
+            </LinearLayout>
+        </com.geojit.libin.travelmate.components.RippleView>
+
+        <com.geojit.libin.travelmate.components.RippleView
+            style="@style/MainGridItemRipple"
+            app:rv_color="@color/mainGridRipple">
+
+            <LinearLayout style="@style/MainGridItem">
+
+                <ImageView
+                    style="@style/MainGridImage"
+                    android:src="@mipmap/near" />
+
+                <com.geojit.libin.travelmate.components.TMTextView
+                    style="@style/MainGridTitle"
+                    android:text="@string/near" />
+            </LinearLayout>
+        </com.geojit.libin.travelmate.components.RippleView>
+
+        <com.geojit.libin.travelmate.components.RippleView
+            style="@style/MainGridItemRipple"
+            app:rv_color="@color/mainGridRipple">
+
+            <LinearLayout style="@style/MainGridItem">
+
+                <ImageView
+                    style="@style/MainGridImage"
+                    android:src="@mipmap/history" />
+
+                <com.geojit.libin.travelmate.components.TMTextView
+                    style="@style/MainGridTitle"
+                    android:text="@string/travel_history" />
+            </LinearLayout>
+        </com.geojit.libin.travelmate.components.RippleView>
+    </GridLayout>
+
+    <com.geojit.libin.travelmate.components.TMTextView
+        style="@style/MainActionTitle"
+        android:layout_below="@+id/main_grid"
+        android:text="Recent" />
+
+
+</RelativeLayout>

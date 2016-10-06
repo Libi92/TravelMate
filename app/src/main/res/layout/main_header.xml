@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/colorPrimary"
+        android:elevation="2dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/header_content_margin"
+        android:paddingTop="@dimen/header_content_padding">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/header_text_padding">
+
+            <com.geojit.libin.travelmate.components.TMTextView
+                style="@style/MainHeaderText"
+                android:singleLine="true"
+                android:text="Libin P Babu"
+                android:textSize="@dimen/header_name"
+                app:font="caviar"
+                app:fontstyle="bold" />
+
+            <com.geojit.libin.travelmate.components.TMTextView
+                style="@style/MainHeaderText"
+                android:maxLines="2"
+                android:text="Software Engineer, Geojit Technologies"
+                android:textSize="@dimen/header_profession" />
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@mipmap/edit_profile"
+            android:theme="@style/ButtonEditProfile" />
+    </LinearLayout>
+
+    <com.geojit.libin.travelmate.components.CircularImageView
+        android:layout_width="@dimen/main_profile_pic_size"
+        android:layout_height="@dimen/main_profile_pic_size"
+        android:layout_gravity="left"
+        android:layout_margin="@dimen/header_content_padding"
+        android:elevation="3dp"
+        android:src="@mipmap/user_dummy" />
+
+</FrameLayout>

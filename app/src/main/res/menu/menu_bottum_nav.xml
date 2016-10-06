@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tab_request"
+        android:icon="@mipmap/request"
+        android:title="Request" />
+    <item
+        android:id="@+id/tab_review"
+        android:icon="@mipmap/review"
+        android:title="Review" />
+    <item
+        android:id="@+id/tab_chat"
+        android:icon="@mipmap/chat"
+        android:title="Chat" />
+</menu>
