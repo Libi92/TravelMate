@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        icon="@mipmap/ic_request"
+        id="@+id/tab_request"
+        title="Request" />
+    <tab
+        icon="@mipmap/ic_review"
+        id="@+id/tab_review"
+        title="Review" />
+    <tab
+        icon="@mipmap/ic_chat"
+        id="@+id/tab_chat"
+        title="Chat" />
+</tabs>

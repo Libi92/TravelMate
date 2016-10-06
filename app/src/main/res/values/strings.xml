@@ -6,4 +6,23 @@
     <string name="search">Search</string>
     <string name="near">Near</string>
     <string name="travel_history">Travel History</string>
+
+    <array name="menu">
+        <item>Regular Trip</item>
+        <item>Plan Trip</item>
+        <item>Contact</item>
+        <item>Search</item>
+        <item>Near</item>
+        <item>Travel History</item>
+    </array>
+
+    <array name="menu_icon">
+        <item>regular_trip</item>
+        <item>plan_trip</item>
+        <item>contact</item>
+        <item>search</item>
+        <item>near</item>
+        <item>history</item>
+    </array>
+
 </resources>
