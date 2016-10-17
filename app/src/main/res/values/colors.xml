@@ -4,7 +4,7 @@
     <color name="colorPrimaryDark">@android:color/holo_blue_dark</color>
     <color name="colorAccent">@color/material_deep_teal_500</color>
 
-    <color name="windowBackground">#e6e6e6</color>
+    <color name="windowBackground">#f5f5f5</color>
     <color name="rippelColor">#f9f9f9</color>
     <color name="mainGridRipple">#aaa</color>
 </resources>

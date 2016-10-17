@@ -6,6 +6,9 @@
     <string name="search">Search</string>
     <string name="near">Near</string>
     <string name="travel_history">Travel History</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
 
     <array name="menu">
         <item>Regular Trip</item>

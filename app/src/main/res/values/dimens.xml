@@ -10,4 +10,5 @@
     <dimen name="header_profession">20sp</dimen>
     <dimen name="main_content_margin">5dp</dimen>
     <dimen name="header_text_padding">20dp</dimen>
+    <dimen name="header_padding_bottom">5dp</dimen>
 </resources>
